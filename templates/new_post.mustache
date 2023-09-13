@@ -1,0 +1,16 @@
+<div class="posts">
+    <h2>New Post</h2>
+    <form>
+        <div class="post-title">
+            <label>Title: </label>
+            <input name="title" type="text"/>
+        </div>
+        <div class="post-content">
+            <label>Content: </label>
+            <textarea name="content"></textarea>
+        </div>
+        <div class="post-submit">
+            <button hx-post="/post" hx-swap="none">Submit</button>
+        </div>
+    </form>
+</div>

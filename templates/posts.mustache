@@ -1,0 +1,12 @@
+<div class="posts">
+    <h2>Posts</h2>
+    {{#posts}}
+        <div class="post">
+            <p>{{creation_date}}</p>
+            <h3>{{title}}</h3>
+        </div>
+    {{/posts}}
+    {{^posts}}
+        <p>No Posts. :(</p>
+    {{/posts}}
+</div>

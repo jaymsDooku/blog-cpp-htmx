@@ -1,0 +1,10 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "C:\\Users\\James\\CLionProjects\\blog-cpp\\build\\generators\\CMakePresets.json",
+        "C:\\Users\\James\\CLionProjects\\blog-cpp\\cmake-build-debug\\build\\generators\\CMakePresets.json"
+    ]
+}

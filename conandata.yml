@@ -1,0 +1,7 @@
+# This file is managed by Conan, contents will be overwritten.
+# To keep your changes, remove these comment lines, but the plugin won't be able to modify your requirements
+
+requirements:
+  - "libsodium/1.0.18"
+  - "sqlitecpp/3.3.1"
+  - "crowcpp-crow/1.0+5"

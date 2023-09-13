@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="header-title" hx-get="/posts" hx-target="#content" hx-replace-url="/">
+        <h2>jaymsDooku</h2>
+        <img src="/img/otternobackground.png" style="width: 32px"/>
+    </div>
+    <div class="header-right">
+        {{#user}}
+            <h3 hx-get="/new-post" hx-target="#content" hx-headers='{"htmx":"true"}' hx-push-url="true">New</h3>
+            <h3 hx-get="/logout" hx-target="#content" hx-headers='{"htmx":"true"}' hx-push-url="true">Logout</h3>
+        {{/user}}
+        {{^user}}
+        <h3 hx-get="/login" hx-target="#content" hx-headers='{"htmx":"true"}' hx-push-url="true">Login</h3>
+        {{/user}}
+    </div>
+</div>

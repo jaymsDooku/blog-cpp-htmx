@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    {{> head.mustache}}
+    <body>
+        <div class="blog">
+            {{> header.mustache}}
+            <div id="content" hx-trigger="load">
+                {{> new_post.mustache}}
+            </div>
+        </div>
+    </body>
+</html>
