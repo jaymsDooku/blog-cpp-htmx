@@ -1,0 +1,18 @@
+<div class="posts">
+    <h2>Edit Post</h2>
+    {{#post}}
+    <form>
+        <div class="post-title">
+            <label>Title: </label>
+            <input name="title" type="text" value="{{title}}"/>
+        </div>
+        <div class="post-content">
+            <label>Content: </label>
+            <textarea name="content">{{content}}</textarea>
+        </div>
+        <div class="post-submit">
+            <button hx-put="/post/{{id}}" hx-swap="none">Submit</button>
+        </div>
+    </form>
+    {{/post}}
+</div>

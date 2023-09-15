@@ -1,0 +1,12 @@
+<div class="post-container">
+    {{#post}}
+    <div class="post-header">
+        <div class="post-title">
+            <h2>{{title}}</h2>
+            <p>{{creation_date}}</p>
+        </div>
+        <h3 hx-get="/post/edit/{{id}}" hx-target="#content" hx-headers='{"htmx":"true"}' hx-push-url="true">Edit</h3>
+    </div>
+    {{{content}}}
+    {{/post}}
+</div>
